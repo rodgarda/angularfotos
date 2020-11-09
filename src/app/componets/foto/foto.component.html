@@ -1,0 +1,18 @@
+<mat-card *ngFor="let photo of fotos">
+<mat-card-subtitle>
+    {{photo.title}}
+</mat-card-subtitle>
+<mat-card-subtitle>
+    <img [src]="photo.thumbnailUrl" mat-card-image>
+</mat-card-subtitle>
+<mat-card-subtitle>
+    {{photo.url}}
+</mat-card-subtitle>
+<mat-card-subtitle>
+    {{photo.albumId}}
+</mat-card-subtitle>
+<mat-card-actions>
+    <button mat-raised-button>Ok</button>
+</mat-card-actions>
+    
+</mat-card>
